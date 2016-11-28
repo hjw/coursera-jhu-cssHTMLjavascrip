@@ -8,30 +8,34 @@
 	padding:  15px;
 	border: solid green;
 }
+.row {
+  width: 100%;
+  background: orange;
+}
+
+
 section {
 	 float: left;
 	border: solid blue;
 	padding: 10px;
 }
 
-/*@media screen and (min-width: 992){
+@media (min-width: 992px){
 	section {
 		float: left;
 		width: 33.3%;
-		
+		background: lavender;
 	}
-
 }
-*/
 
-@media  screen and (min-width: 768) and (max-width: 991px) {
-	section{
-		width: 50%;
-		color: orange;
+@media (min-width:768px ) and (max-width: 991px){
+  section{
+    width: 50%;
+  }
+  .col-3{
+    width: 100%;
   }
 }
+@media (max-width: 767px){
 
-@media screen and (max-width: 767){
-	color: red;
-	font-size: 150%;
 }
