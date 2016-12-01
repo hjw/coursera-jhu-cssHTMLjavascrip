@@ -1,67 +1,63 @@
 *{
 	box-sizing: border-box;
 }
-h1 {
-	text-align: center;
-	font-size: 175%;
-	margin: 35px;
-}
+
+h1 {text-align: center; font-size: 175%; }
+
+h2 {font-size: 125%; }
+
 body {
-	width: 98%;
-	padding-left: 3%;
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	margin: 0%;
+	font-family: "Comic Sans MS", cursive, sans-serif; 
+}
+
+.container{
+	padding: 5%;
+	width: 100%;
+}
+.contents {
+	margin: 1em;
+	margin-top: 60px;
+}
+
+.inner{
+	border: solid 1px black;
+	background: lightgrey;
+	padding-left: 1em;
 }
 
 .section-title{
-	text-align: center;
-	font-size: 125%;
-	float: right;
-	border-left: solid 1px black;
-	border-bottom: solid 1px black;
-	padding: 2% 10%;
-	margin-bottom: 2%;
-}
-.myCol{
 	border: solid 1px black;
-	background: lightgrey;
-	float: left;
+	position: absolute;
+	margin:0px;
+	top: 0px;
+	right: 0px;
+	text-align: center;
+	padding: .5em 2.5em;
 }
 
-.contents {
-	margin: 5%;
-	clear:right;
+.triple, .double, .fullwidth {
+	position: relative;
+	padding-left: 2%; /* creates space around .inner divs */
+	margin-top:2%;
+	float: left;
 }
 
 #chicken { background: pink; }
 #beef{ background:red; }
 #sushi{ background: beige; }
 
-#left-col{
-	padding-left: 30px;
-}
 @media (min-width: 992px){
-	.myCol{
-		width: 31%;
-		margin-right: 2%;
+	.triple{
+		width: 33%;
 	}
 }
 
 @media (min-width:768px ) and (max-width: 991px){
-	.myCol {
-		width: 48%;
+	.double {
+		width: 50%;
 	}
-  #last-col{
-  	margin-top: 2%;
-    width: 96%;
-    clear: both;
-  }
-}
-@media (max-width: 767px){
-	.myCol{
-		margin: 2%;
+	.fullwidth{
+		width: 100%;
 	}
-	body {
-		padding: 7%;
-	}
-	
 }
