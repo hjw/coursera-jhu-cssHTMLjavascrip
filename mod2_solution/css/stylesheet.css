@@ -1,71 +1,66 @@
+
+/* hjw mod2 assignment 12/2 */
 *{
 	box-sizing: border-box;
 }
 
-h1 {
-	text-align: center;
-	font-size: 175%;
+h1 {text-align: center; font-size: 175%; }
+
+h2 {font-size: 125%; }
+
+body {
+	margin: 0%;
+	font-family: "Comic Sans MS", cursive, sans-serif; 
 }
 body {font-family: "Comic Sans MS", cursive, sans-serif; }
 
-.section-title{
-	text-align: center;
-	font-size: 125%;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	border-left: solid 1px black;
-	border-bottom: solid 1px black;
-	padding: .5em 2.5em;
+.container{
+	padding: 5%;
+	width: 100%;
 }
 .contents {
-	margin: 5%;
+	margin: 1em;
 	margin-top: 60px;
-	clear:right;
 }
 
-.myCol{
-	position:relative;
+.inner{
 	border: solid 1px black;
 	background: lightgrey;
+	padding-left: 1em;
+}
+
+.section-title{
+	border: solid 1px black;
+	position: absolute;
+	margin:0px;
+	top: 0px;
+	right: 0px;
+	text-align: center;
+	padding: .5em 2.5em;
+}
+
+.triple, .double, .fullwidth {
+	position: relative;
+	padding-left: 2%; /* creates space around .inner divs */
+	margin-top:2%;
 	float: left;
-	margin-left: 2%;
 }
 
 #chicken { background: pink; }
 #beef{ background:red; }
 #sushi{ background: beige; }
 
-#left-col{
-	margin-left: 3%;
-	float: left;
-}
-
 @media (min-width: 992px){
-	.myCol{
-		width: 30%;
+	.triple{
+		width: 33%;
 	}
 }
 
 @media (min-width:768px ) and (max-width: 991px){
-	.myCol {
-		width: 47%;
+	.double {
+		width: 50%;
 	}
-	#left-col, #last-col{ 
-		margin-left: 2%; 
+	.fullwidth{
+		width: 100%;
 	}
-	#last-col{
-		margin-top: 2%;
-		width: 96%;
-		clear: both; }
-}
-
-@media (max-width: 767px){
-	/* increase gutter size for single col layout,
-	   leave vertical spacing at 2% 
-	 */
-	.myCol, #left-col{
-		margin: 2% 7% 2% 7%;
-	}
-	
 }
