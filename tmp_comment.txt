@@ -1,0 +1,10 @@
+Hi Heidi,
+I gave you full credit for your solution. It displays the webpage as described in the assignment. 
+There are a few of things that you could do/keep an eye on:
+
+1) external style sheets should not contain <style></style> tags. Because you style sheet has those, it doesn't validate when run through the w3 validator.
+
+2) It's best practice to try to choose html5 tags in a way which leverages their semantic values. So, best practice would be to use <div> to enclose areas which are only separated from other areas for style purposes, <section> for semantic sections of your page (section for each group of food types) and <h#> for calling out the title of your food groups. None of this really effects the way the page renders in a browser but it does effect search engines/robots/ screen readers for visually challenged folks. 
+3) It is possible to style this page in a way where you do not need to specify any special styling for the way the food group divs/sections display when the browser window is at its minimum/phone size.
+
+All in all you accomplished what needed to be accomplished. Writing a page which adjusts properly to a changing screen size can be quirky business. You should be proud of yourself.
