@@ -5,7 +5,6 @@
 }
 
 h1 {text-align: center; font-size: 175%; }
-
 h2 {font-size: 125%; }
 
 body {
@@ -13,36 +12,44 @@ body {
 	font-family: "Comic Sans MS", cursive, sans-serif; 
 }
 
+/*container padding sets minimum 1em gutters on left and right of the whole page
+triple, double, fullwidth padding puts 2em between columns and below columns
+plus adds 1em to left and right gutters to make all spacing 2em.*/
+
 .container{
-	padding-right: 1em;
+	padding: 1em;
 	width: 100%;
 }
-.contents {
-	margin: 1em;
-	margin-top: 60px;
+
+.triple, .double, .fullwidth {
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom:2em;
+	float: left;
 }
 
 .inner{
+	position: relative;
 	border: solid 1px black;
 	background: lightgrey;
 	padding-left: 1em;
 }
 
+
+
 .section-title{
-	border: solid 1px black;
-	position: absolute;
-	margin:0px;
-	top: 0px;
-	right: 0px;
+	border-left: solid 1px black;
+	border-bottom: solid 1px black;	
 	text-align: center;
 	padding: .5em 2.5em;
+	position: absolute;
+	margin-top:0px;
+	top: 0px;
+	right: 0px;
 }
 
-.triple, .double, .fullwidth {
-	position: relative;
-	padding-left: 2%; /* creates space around .inner divs */
-	margin-bottom:2%;
-	float: left;
+p.contents {
+	margin-top: 4em;
 }
 
 #chicken { background: pink; }
@@ -51,7 +58,7 @@ body {
 
 @media (min-width: 992px){
 	.triple{
-		width: 33%;
+		width: 33.3%;
 	}
 }
 
