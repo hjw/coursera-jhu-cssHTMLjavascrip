@@ -14,7 +14,7 @@ body {
 }
 
 .container{
-	padding: 5%;
+	padding-right: 1em;
 	width: 100%;
 }
 .contents {
@@ -41,7 +41,7 @@ body {
 .triple, .double, .fullwidth {
 	position: relative;
 	padding-left: 2%; /* creates space around .inner divs */
-	margin-top:2%;
+	margin-bottom:2%;
 	float: left;
 }
 
