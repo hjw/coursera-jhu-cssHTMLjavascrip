@@ -1,15 +1,15 @@
 
 /* hjw mod2 assignment 12/2 */
 *{
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 h1 {text-align: center; font-size: 175%; }
 h2 {font-size: 125%; }
 
 body {
-	margin: 0%;
-	font-family: "Comic Sans MS", cursive, sans-serif; 
+    margin: 0%;
+    font-family: "Comic Sans MS", cursive, sans-serif; 
 }
 body {font-family: "Comic Sans MS", cursive, sans-serif; }
 
@@ -18,39 +18,39 @@ triple, double, fullwidth padding puts 2em between columns and below columns
 plus adds 1em to left and right gutters to make all spacing 2em.*/
 
 .container{
-	padding: 1em;
-	width: 100%;
+    padding: 1em;
+    width: 100%;
 }
 
 .triple, .double, .fullwidth {
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-bottom:2em;
-	float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom:2em;
+    float: left;
 }
 
 .inner{
-	position: relative;
-	border: solid 1px black;
-	background: lightgrey;
-	padding-left: 1em;
+    background: lightgrey;
+    border: solid 1px black;
+    padding-left: 1em;
+    position: relative;
 }
 
 
 
 .section-title{
-	border-left: solid 1px black;
-	border-bottom: solid 1px black;	
-	text-align: center;
-	padding: .5em 2.5em;
-	position: absolute;
-	margin-top:0px;
-	top: 0px;
-	right: 0px;
+    border-left: solid 1px black;
+    border-bottom: solid 1px black; 
+    text-align: center;
+    padding: .5em 2.5em;
+    position: absolute;
+    margin-top:0px;
+    top: 0px;
+    right: 0px;
 }
 
 p.contents {
-	margin-top: 4em;
+    margin-top: 4em;
 }
 
 #chicken { background: pink; }
@@ -58,16 +58,16 @@ p.contents {
 #sushi{ background: beige; }
 
 @media (min-width: 992px){
-	.triple{
-		width: 33.3%;
-	}
+    .triple{
+        width: 33.3%;
+    }
 }
 
 @media (min-width:768px ) and (max-width: 991px){
-	.double {
-		width: 50%;
-	}
-	.fullwidth{
-		width: 100%;
-	}
+    .double {
+        width: 50%;
+    }
+    .fullwidth{
+        width: 100%;
+    }
 }
