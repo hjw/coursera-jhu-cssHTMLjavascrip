@@ -1,0 +1,44 @@
+/*hjw week3*/
+body{
+  font-family: 'Raleway'
+}
+#header-nav{
+  background-color: hsla(212, 59%, 66%, 1);
+
+    /*background-color: hsla(154, 27%, 76%, 1);
+    background: linear-gradient(hsla(155, 27%, 84%, 1),hsla(155, 27%, 71%, 1));*/
+    border-radius: 0;
+    border: 0;
+  }
+  #header-image{
+    background: url('http://www.dhara.dhamma.org/wp-content/uploads/header-image.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+  }
+.light{
+  font-style: italic;
+}
+
+.page-header{
+  border:none;
+  margin: 10px;
+}
+.page-header>h1{
+  font-size: 35px;
+  font-weight: bold;
+  /*font-size:3.4em;*/
+}
+.page-header > h3 {
+  font-size: 25px;
+}
+.page-header > h4 {
+  font-size:22px;
+  font-family: Arial;
+  font-weight: 400;
+  margin-top: 15px;
+}
+  .page-header > h1, h2,h3,h4{
+    /*line-height: .2;*/
+    margin: 0;
+  }
