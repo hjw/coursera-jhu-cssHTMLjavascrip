@@ -1,21 +1,32 @@
 /*hjw week3*/
 body{
-  /*font-family: 'Raleway'*/
+  font-size: 18px;
 }
 #header-nav{
-  background: lightyellow;
-  border: none;
+  background: #FFFFE0;
 }
 
-.page-header{
-  float: left;
-  border: none;
-  margin: 0px 10px;
+.navbar-brand{
+  font-size: 1.3em;
 }
-
-
-/*.page-header + button.collapsed{
-  min-height: 4em ;
-  min-width: 4em;
-  margin-top: 10px;
-}*/
+#collapsable-nav{
+  padding:0;
+}
+#nav-list{
+  margin: 0;
+}
+#nav-list li{
+  border:  solid 1px #D3D3D3;
+}
+#page-content{
+  margin-top: 1.5em;
+  background: #D3D3D3;
+  height: 1000px;
+}
+@media (max-width:768px )  {
+  #page-content.container  {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  
+}
