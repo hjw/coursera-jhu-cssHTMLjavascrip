@@ -1,0 +1,47 @@
+/*hjw week3*/
+
+body {
+  font-size: 18px;
+}
+
+#header-nav {
+  background: #FFFFE0;
+}
+
+.navbar-brand {
+  font-size: 1.3em;
+  /* I don't like how the brand name jumps around
+     when resizing the window so I set it to an absolute
+     position. It still adjusts when it switches to the xs
+     screen size, but I don't want to spend the time searching
+     for the answer
+  */
+  position: absolute;
+  left: 20px;
+}
+
+#collapsable-nav {
+  padding: 0;
+}
+
+#nav-list {
+  margin: 0;
+}
+
+#nav-list li {
+  border: solid 1px #D3D3D3;
+}
+
+#page-content {
+  margin-top: 1.5em;
+  background: #D3D3D3;
+  height: 1000px;
+}
+
+@media (max-width:768px) {
+  /* added borders in small screensize */
+  #page-content.container {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+}
