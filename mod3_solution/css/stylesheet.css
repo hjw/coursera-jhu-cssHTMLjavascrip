@@ -2,21 +2,21 @@
 body{
   font-size: 18px;
 }
+.navbar-brand{
+  font-size: 1.3em;
+}
 #header-nav{
   background: #FFFFE0;
 }
 
-.navbar-brand{
-  font-size: 1.3em;
-}
 #collapsable-nav{
-  padding:0;
+  border-width: 0;
 }
 #nav-list{
   margin: 0;
 }
 #nav-list li{
-  border:  solid 1px #D3D3D3;
+  border-top:  solid 1px #D3D3D3;
 }
 #page-content{
   margin-top: 1.5em;
