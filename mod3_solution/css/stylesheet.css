@@ -2,34 +2,33 @@
 body{
   font-size: 18px;
 }
+.navbar-brand{
+  font-size: 1.3em;
+}
 #header-nav{
   background: #FFFFE0;
 }
 
-.navbar-brand{
-  font-size: 1.3em;
-}
 #collapsable-nav{
-  padding:0;
+  border-width: 0;
 }
 #nav-list{
-  margin: 0;
+  padding: 0;
 }
 #nav-list li{
-  border:  solid 1px #D3D3D3;
+  border-top:  solid 1px #D3D3D3;
 }
 #page-content{
   margin-top: 1.5em;
-}
-.menu-section{
+  margin-left: 30px;
+  margin-right: 30px;
   background: #D3D3D3;
-  height: 500px;
+  height: 1000px;
 }
 @media (max-width:768px )  {
   /* added borders for small screensize */
   #page-content.container{ 
     margin-right: 60px;
     margin-left: 60px;
-  }
-  
+  } 
 }
